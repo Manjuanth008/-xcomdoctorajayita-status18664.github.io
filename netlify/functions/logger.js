@@ -1,9 +1,10 @@
 const fetch = require('node-fetch');
 
+// ✅ Replace this with your actual Google Apps Script Web App URL:
+const googleScriptURL = 'https://script.google.com/macros/s/AKfycbzHR371yHtmWV2qSGVYc8zFozoRnK2ybbVHZKn61kWrO-ZsEsov6uMRLrOkRasItx0h/exec';
+
 exports.handler = async (event) => {
   const data = JSON.parse(event.body);
-
-  const GOOGLE_SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzHR371yHtmWV2qSGVYc8zFozoRnK2ybbVHZKn61kWrO-ZsEsov6uMRLrOkRasItx0h/exec';
 
   try {
     const response = await fetch(googleScriptURL, {
@@ -27,5 +28,3 @@ exports.handler = async (event) => {
     };
   }
 };
-
-
