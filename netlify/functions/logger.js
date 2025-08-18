@@ -11,7 +11,7 @@ exports.handler = async (event) => {
   const data = JSON.parse(event.body);
 
   // ✅ Replace with your actual Google Apps Script Web App URL
-  const GOOGLE_SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyafXsf7ZgyMNQi3loPdSx1f3Eyqs-WunJRVv0xxANc4fkw_126JoN12Ye131FcWsY/exec';
+  const GOOGLE_SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzHR371yHtmWV2qSGVYc8zFozoRnK2ybbVHZKn61kWrO-ZsEsov6uMRLrOkRasItx0h/exec';
 
   try {
     const response = await fetch(GOOGLE_SHEET_ENDPOINT, {
@@ -35,3 +35,4 @@ exports.handler = async (event) => {
     };
   }
 };
+
